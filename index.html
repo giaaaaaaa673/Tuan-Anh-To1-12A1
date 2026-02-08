@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Tuấn Anh - Hành trình của tôi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a5c38;     /* Xanh lá quân đội */
+            --dark: #111827;
+            --gray: #4b5563;
+            --light: #f3f4f6;
+            --border: #2d3748;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f8fafc;
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 80px 20px 50px;
+            border-bottom: 6px solid var(--dark);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.4rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 50px;
+            padding: 35px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--gray);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 5px solid var(--primary);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+        }
+        .info-item {
+            font-size: 1.3rem;
+            margin: 14px 0;
+        }
+        .info-item i {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-right: 12px;
+            min-width: 30px;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .hobby-item {
+            width: 45%;
+            min-width: 300px;
+            text-align: center;
+            padding: 20px;
+            background: #f1f5f9;
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+        }
+        .hobby-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .hobby-item h3 {
+            color: var(--dark);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .dream {
+            text-align: center;
+        }
+        .dream img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .goals ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.3rem;
+        }
+        .goals li {
+            margin: 18px 0;
+            padding-left: 35px;
+            position: relative;
+        }
+        .goals li::before {
+            content: "✔";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: var(--light);
+            padding: 35px;
+            border-radius: 8px;
+            border: 2px solid var(--primary);
+        }
+        .contact p {
+            font-size: 1.4rem;
+            margin: 15px 0;
+        }
+        .contact i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-right: 10px;
+        }
+        .contact a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hobbies { flex-direction: column; }
+            .hobby-item { width: 100%; }
+            header h1 { font-size: 2.5rem; }
+            .profile img { width: 180px; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lê Tuấn Anh</h1>
+        <p>Học sinh lớp 12A1 - THPT Tây Sơn</p>
+    </header>
+
+    <div class="container">
+
+        <section class="profile">
+            <img src="https://i.ibb.co/xt8kLH07/IMG-20260207-221133.jpg" alt="Lê Tuấn Anh">
+            <div>
+                <h2>Thông tin cá nhân</h2>
+                <div class="info-item"><i class="fas fa-graduation-cap"></i> <strong>Lớp:</strong> 12A1</div>
+                <div class="info-item"><i class="fas fa-birthday-cake"></i> <strong>Ngày sinh:</strong> 02/05/2008</div>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i> <strong>Địa chỉ:</strong> An Chánh, Bình An, Gia Lai</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sở thích</h2>
+            <div class="hobbies">
+                <div class="hobby-item">
+                    <h3>1. Nghe nhạc</h3>
+                    <img src="https://i.ibb.co/ks549S9c/2024-2-18-638438654982537717-phan-mem-nghe-nhac-tren-may-tinh.webp" alt="Nghe nhạc">
+                    <p>Nhạc giúp mình thư giãn sau giờ học và giữ tinh thần tỉnh táo khi cần tập trung.</p>
+                </div>
+
+                <div class="hobby-item">
+                    <h3>2. Chơi thể thao</h3>
+                    <img src="https://i.ibb.co/q3qkc5XC/Screenshot-2026-0204-131408.png" alt="Chơi thể thao">
+                    <p>Thể thao rèn luyện sức khỏe, ý chí và tinh thần đồng đội – những phẩm chất cần thiết cho tương lai.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dream">
+            <h2>Ước mơ trong tương lai</h2>
+            <p>Làm công an là ước mơ từ nhỏ của mình. Không phải vì quyền lực hay danh vọng, mà vì mình muốn bảo vệ sự bình yên cho mọi người, đứng lên khi xã hội cần công lý. Mình tin rằng một xã hội an toàn, công bằng chỉ có được khi có những người liêm chính, dũng cảm và sẵn sàng hy sinh vì cộng đồng. Đó là lý do mình quyết tâm theo đuổi con đường này – để trở thành một phần của lực lượng giữ gìn trật tự, bảo vệ nhân dân.</p>
+            <img src="https://i.ibb.co/YFZ4JFbv/cong-an-nhan-dan-2024.webp" alt="Công an nhân dân">
+            <img src="https://i.ibb.co/hJPDS4Nt/102621561.jpg" alt="Công an">
+        </section>
+
+        <section class="goals">
+            <h2>Mục tiêu trong tương lai</h2>
+            <ul>
+                <li>Trở thành một chú công an liêm chính, luôn đặt lợi ích của nhân dân lên trên hết.</li>
+                <li>Có ích với người thân và xã hội, sống sao cho xứng đáng với những gì mình đã được học và trưởng thành.</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Liên hệ với tôi</h2>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:0964178101">0964178101</a></p>
+            <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1HzTjBUSje/" target="_blank">Facebook</a></p>
+            <p><i class="fab fa-tiktok"></i> <a href="https://www.tiktok.com/@ltanh1230?_r=1&_t=ZS-93j3NjcCPKu" target="_blank">TikTok</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Lê Tuấn Anh • Quyết tâm và trách nhiệm</p>
+    </footer>
+
+</body>
+</html>
